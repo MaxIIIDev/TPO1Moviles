@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ConversorDeMonedaTp1</string>
+    <string name="title_app">Conversor de Moneda</string>
+    <string name="label_dolares">Dolares</string>
+    <string name="label_euros">Euros</string>
+    <string name="label_conversion">Valor de Conversion</string>
+    <string name="hint_dolares">Ingrese dolares</string>
+    <string name="hint_euros">Ingrese euros</string>
+    <string name="hint_tasa">Tasa de cambio</string>
+    <string name="btn_cambiar">Cambiar Valor</string>
+    <string name="rb_dolares">Convertir a Dolares</string>
+    <string name="rb_euros">Convertir a Euros</string>
+    <string name="btn_convertir">Convertir</string>
+    <string name="label_1_usd">1$=</string>
+</resources>
