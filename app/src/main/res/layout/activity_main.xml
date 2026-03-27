@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAF1"
+    android:background="#FFFFFF"
     tools:context=".View.MainActivity">
 
     <TextView
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:labelFor="@+id/editTextDolar"
         android:text="@string/label_dolares"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editTextDolar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
@@ -44,22 +45,12 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A1434242"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:labelFor="@+id/editTextEuro"
-        android:text="@string/label_euros"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDolar" />
 
     <EditText
         android:id="@+id/editTextEuro"
@@ -71,10 +62,28 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A1434242"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextTasaDeCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="156dp"
+        android:ems="10"
+        android:hint="@string/hint_tasa"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A1434242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEuro" />
 
     <TextView
         android:id="@+id/textView9"
@@ -83,26 +92,13 @@
         android:layout_marginTop="28dp"
         android:labelFor="@+id/editTextTasaDeCambio"
         android:text="@string/label_conversion"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editTextTasaDeCambio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEuro"
         app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editTextTasaDeCambio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="160dp"
-        android:ems="10"
-        android:hint="@string/hint_tasa"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEuro" />
 
     <TextView
         android:id="@+id/textView10"
@@ -110,10 +106,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/label_1_usd"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/editTextTasaDeCambio"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:labelFor="@+id/editTextEuro"
+        android:text="@string/label_euros"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDolar" />
 
     <Button
         android:id="@+id/ButtonTasaDeCambio"
@@ -121,6 +132,7 @@
         android:layout_height="48dp"
         android:backgroundTint="#E91E63"
         android:text="@string/btn_cambiar"
+        android:textColor="#FDFDFD"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTasaDeCambio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextTasaDeCambio"
@@ -141,9 +153,11 @@
             android:id="@+id/radioButtonDolares"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
             android:text="@string/rb_dolares"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintHorizontal_bias="0.161"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTasaDeCambio" />
 
@@ -152,8 +166,9 @@
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="@string/rb_euros"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintHorizontal_bias="0.153"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioButtonDolares" />
     </RadioGroup>
@@ -162,8 +177,9 @@
         android:id="@+id/ButtonConvertir"
         android:layout_width="120dp"
         android:layout_height="61dp"
-        android:backgroundTint="#AD15F418"
+        android:backgroundTint="#56CC56"
         android:text="@string/btn_convertir"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
