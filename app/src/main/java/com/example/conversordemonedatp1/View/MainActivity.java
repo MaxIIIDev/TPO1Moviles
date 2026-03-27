@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         });
         /* Es un evento que permite setear el radio button seleccionado para identificar el tipo de conversion  */
         mainBinding.radioGroup.setOnCheckedChangeListener((radioGroup, i)->{
-            mainViewModel.setIsDolar( i == R.id.radioButtonDolares);
+            mainViewModel.setIsDolar( i == mainBinding.radioButtonDolares.getId());
         });
         /* Evento click para convertir  */
         mainBinding.ButtonConvertir.setOnClickListener(new View.OnClickListener() {
