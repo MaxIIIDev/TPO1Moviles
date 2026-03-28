@@ -4,8 +4,8 @@
 Esta aplicación de Android permite realizar conversiones de moneda (Dólares a Euros y viceversa) de manera dinámica. El usuario puede ingresar una tasa de cambio personalizada y elegir el sentido de la conversión mediante botones de opción (RadioButtons). La interfaz es intuitiva y cuenta con validaciones para asegurar que se ingresen valores correctos antes de realizar el cálculo.
 
 ## Integrantes del Grupo
-*   **Miranda Salmin, Ismael Ariel** - DNI: XXXXXXXX
-*   **Quiroga, Maximo Tomas** - DNI: XXXXXXXX
+*   **Miranda Salmin, Ismael Ariel** - DNI: 44993241
+*   **Quiroga, Maximo Tomas** - DNI: 44642650
 *   **Zegarra, Juan Cruz** - DNI: 43057480
 
 ## Implementación de MVVM
